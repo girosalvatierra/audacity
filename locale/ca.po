@@ -1,6 +1,7 @@
 # Copyright (C) 2007 Free Software Foundation, Inc.
 # Francesc Busquets <fbusquets@yahoo.com>, 2007.
 # Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2016-2018.
+# Giró Salvatierra <raul.giro@uab.cat>, 2021.
 #
 msgid ""
 msgstr ""
@@ -6133,7 +6134,7 @@ msgstr "Baix:"
 
 #: src/commands/SelectCommand.cpp
 msgid "Select Tracks"
-msgstr ""
+msgstr "Selecciona pistes"
 
 #. i18n-hint verb, imperative
 #: src/commands/SelectCommand.cpp
@@ -6163,15 +6164,15 @@ msgstr "Mode:"
 
 #: src/commands/SelectCommand.h
 msgid "Selects a time range."
-msgstr ""
+msgstr "Selecciona un rang de temps."
 
 #: src/commands/SelectCommand.h
 msgid "Selects a frequency range."
-msgstr ""
+msgstr "Selecciona un rang de freqüències."
 
 #: src/commands/SelectCommand.h
 msgid "Selects a range of tracks."
-msgstr ""
+msgstr "Selecciona un rang de pistes."
 
 #: src/commands/SelectCommand.h
 msgid "Selects Audio."
@@ -6179,7 +6180,7 @@ msgstr "Selecciona l'àudio."
 
 #: src/commands/SetClipCommand.cpp
 msgid "Set Clip"
-msgstr ""
+msgstr "Aplica al clip"
 
 #: src/commands/SetClipCommand.cpp src/commands/SetTrackInfoCommand.cpp
 msgid "Color 0"
@@ -6199,7 +6200,7 @@ msgstr "Color 3"
 
 #: src/commands/SetClipCommand.cpp
 msgid "At:"
-msgstr ""
+msgstr "A:"
 
 #: src/commands/SetClipCommand.cpp src/commands/SetTrackInfoCommand.cpp
 #, fuzzy
@@ -6216,7 +6217,7 @@ msgstr "Estableix diversos valors per a un clip."
 
 #: src/commands/SetEnvelopeCommand.cpp
 msgid "Set Envelope"
-msgstr ""
+msgstr "Defineix l'envolupant"
 
 #: src/commands/SetEnvelopeCommand.cpp
 msgid "Time:"
@@ -6228,7 +6229,7 @@ msgstr "Elimina"
 
 #: src/commands/SetEnvelopeCommand.h
 msgid "Sets an envelope point position."
-msgstr ""
+msgstr "Fixa un punt d'envolupant."
 
 #: src/commands/SetLabelCommand.cpp
 msgid "Set Label"
@@ -6236,7 +6237,7 @@ msgstr "Estableix l'etiqueta"
 
 #: src/commands/SetLabelCommand.cpp
 msgid "Label Index"
-msgstr ""
+msgstr "Índex d'etiqueta"
 
 #: src/commands/SetLabelCommand.cpp
 msgid "End:"
@@ -6301,7 +6302,7 @@ msgstr "Sense nom"
 
 #: src/commands/SetTrackInfoCommand.cpp
 msgid "Focused"
-msgstr ""
+msgstr "Actiu"
 
 #: src/commands/SetTrackInfoCommand.cpp
 msgid "Set Track Audio"
@@ -6416,7 +6417,7 @@ msgid ""
 "Reduces (ducks) the volume of one or more tracks whenever the volume of a "
 "specified \"control\" track reaches a particular level"
 msgstr ""
-"Redueix el volum d'una o més pistes tan aviat com el volum de la pista "
+"Redueix el volum d'una o més pistes quan el volum de la pista "
 "marcada com a \"control\" arriba a un determinat nivell"
 
 #. i18n-hint: Auto duck is the name of an effect that 'ducks' (reduces the volume)
@@ -6617,7 +6618,7 @@ msgstr "des de (Hz)"
 
 #: src/effects/ChangePitch.cpp
 msgid "f&rom"
-msgstr ""
+msgstr "des de"
 
 #: src/effects/ChangePitch.cpp
 msgid "to (Hz)"
@@ -6646,17 +6647,17 @@ msgstr "Utilitza l'estirament d'alta qualitat (lent)"
 
 #: src/effects/ChangeSpeed.cpp
 msgid "33⅓"
-msgstr ""
+msgstr "33⅓"
 
 #: src/effects/ChangeSpeed.cpp
 #, fuzzy
 msgid "45"
-msgstr "4"
+msgstr "45"
 
 #: src/effects/ChangeSpeed.cpp
 #, fuzzy
 msgid "78"
-msgstr "8"
+msgstr "78"
 
 #. i18n-hint: n/a is an English abbreviation meaning "not applicable".
 #. i18n-hint: Can mean "not available," "not applicable," "no answer"
@@ -6687,7 +6688,7 @@ msgstr "Multiplicador de velocitat:"
 #. "vinyl" refers to old-fashioned phonograph records
 #: src/effects/ChangeSpeed.cpp
 msgid "Standard Vinyl rpm:"
-msgstr "RPM de vinil estàndard:"
+msgstr "Revolucions per minut de vinil:"
 
 #. i18n-hint: changing speed of audio "from" one value "to" another
 #. "rpm" means "revolutions per minute" as on a vinyl record turntable
@@ -9442,11 +9443,11 @@ msgstr "To"
 
 #: src/effects/ToneGen.cpp
 msgid "Generates an ascending or descending tone of one of four types"
-msgstr ""
+msgstr "Genera un to ascendent o descendent d'un d'aquests quatre tipus"
 
 #: src/effects/ToneGen.cpp
 msgid "Generates a constant frequency tone of one of four types"
-msgstr ""
+msgstr "Genera un to de freqüència constant d'un d'aquests quatre tipus"
 
 #: src/effects/ToneGen.cpp
 #, fuzzy
@@ -9565,6 +9566,10 @@ msgid ""
 "require 8192 samples or less to work properly. However most effects can "
 "accept large buffers and using them will greatly reduce processing time."
 msgstr ""
+"La mida de la memòria intermèdia controla el nombre de mostres enviades a l'efecte en cada "
+"repetició. Els valors petits provocaran un processament més lent i alguns efectes "
+"necessiten 8.192 mostres o menys per funcionar correctament. Tot i això, la majoria d'efectes "
+"accepta valors gran i utilitzar-los reduirà notablement el temps de processament."
 
 #: src/effects/VST/VSTEffect.cpp
 msgid "&Buffer Size (8 to 1048576 samples):"
@@ -9582,6 +9587,10 @@ msgid ""
 "silences have been inserted into the audio. Enabling this option will "
 "provide that compensation, but it may not work for all VST effects."
 msgstr ""
+"Com a part del seu processament, alguns efectes VST provocaran retard en el retorn a "
+"Audacity. Si no es compensa aquest retard, notareu que petits "
+"blancs s'han insertir fins l'àudio. Activant aquest opció "
+"es proporcionarà aquesta compensació, però pot no funcionar en tots el efectes VST."
 
 #: src/effects/VST/VSTEffect.cpp src/effects/audiounits/AudioUnitEffect.cpp
 #: src/effects/ladspa/LadspaEffect.cpp src/effects/lv2/LV2Effect.cpp
@@ -9617,11 +9626,11 @@ msgstr "Desa el valor predefinit VST com a:"
 
 #: src/effects/VST/VSTEffect.cpp
 msgid "Standard VST bank file"
-msgstr ""
+msgstr "Fitxer estàndard de banc VST"
 
 #: src/effects/VST/VSTEffect.cpp
 msgid "Standard VST program file"
-msgstr ""
+msgstr "Fitxer estàndard de programa VST"
 
 #: src/effects/VST/VSTEffect.cpp
 #, fuzzy
@@ -9752,6 +9761,10 @@ msgid ""
 "Select \"Basic\" for a basic text-only interface. Reopen the effect for this "
 "to take effect."
 msgstr ""
+"Seleccioneu \"Complet\" per utilitzar la interfície gràfica, si la unitat d'àudio l’ofereix. "
+"Seleccioneu \"Generic\" per utilitzar la interfície genèrica del sistema. "
+"Seleccioneu \"Basic\" per a una interfase bàsica, només de text. Cal que reobriu l'efecte si trieu "
+"aquesta opció, per tal que s'executi."
 
 #: src/effects/audiounits/AudioUnitEffect.cpp
 msgid "Select &interface"
@@ -9759,7 +9772,7 @@ msgstr "Selecciona la &interfície"
 
 #: src/effects/audiounits/AudioUnitEffect.cpp src/prefs/KeyConfigPrefs.cpp
 msgid "Full"
-msgstr ""
+msgstr "Complet"
 
 #: src/effects/audiounits/AudioUnitEffect.cpp
 msgid "Generic"
@@ -9854,12 +9867,12 @@ msgstr "No es pot obtenir la descripció del flux de dades"
 
 #: src/effects/audiounits/AudioUnitEffect.cpp
 msgid "Failed to convert property list to XML data"
-msgstr ""
+msgstr "No s'ha pogut convertir la llista de propietats en dades XML"
 
 #: src/effects/audiounits/AudioUnitEffect.cpp
 #, fuzzy
 msgid "XML data is empty after conversion"
-msgstr "Conversió de la freqüència de mostreig"
+msgstr "Les dades XML es buidaran després de la conversió"
 
 #: src/effects/audiounits/AudioUnitEffect.cpp
 #, fuzzy, c-format
@@ -9870,11 +9883,11 @@ msgstr ""
 
 #: src/effects/audiounits/AudioUnitEffect.cpp
 msgid "Failed to convert preset to internal format"
-msgstr ""
+msgstr "No s'ha pogut convertir l'ajustament en format intern"
 
 #: src/effects/audiounits/AudioUnitEffect.cpp
 msgid "Failed to create property list for preset"
-msgstr ""
+msgstr "No s'ha pogut crear la llista de propietats en ajustament"
 
 #: src/effects/audiounits/AudioUnitEffect.cpp
 #, c-format
@@ -21258,7 +21271,7 @@ msgstr "Error.~%Es requereix la pista estèreo."
 
 #~ msgid "on each iteration. Smaller values will cause slower processing and "
 #~ msgstr ""
-#~ "en cada iteració. Si indiqueu valors petits, s'alentirà el processament i "
+#~ "en cada repetició. Si indiqueu valors petits, s'alentirà el processament i "
 
 #~ msgid "some effects require 8192 samples or less to work properly. However "
 #~ msgstr ""
@@ -21275,7 +21288,7 @@ msgstr "Error.~%Es requereix la pista estèreo."
 
 #~ msgid "As part of their processing, some VST effects must delay returning "
 #~ msgstr ""
-#~ "A causa del seu processament, alguns efectes VST poden trigar a retornar "
+#~ "A causa del seu processament, alguns efectes VST poden tenir retard en el retorn "
 
 #~ msgid "audio to Audacity. When not compensating for this delay, you will "
 #~ msgstr "l'àudio a Audacity. Si no compenseu aquest retard, observareu "
@@ -21299,8 +21312,8 @@ msgstr "Error.~%Es requereix la pista estèreo."
 #~ msgid ""
 #~ "As part of their processing, some Audio Unit effects must delay returning "
 #~ msgstr ""
-#~ "A causa del seu processament, alguns efectes d'Audio Unit poden trigar a "
-#~ "retornar "
+#~ "A causa del seu processament, alguns efectes d'Audio Unit tenir retard "
+#~ "en el retorn "
 
 #~ msgid "not work for all Audio Unit effects."
 #~ msgstr "no funciona amb tots els efectes d'Audio Unit."
@@ -21308,15 +21321,15 @@ msgstr "Error.~%Es requereix la pista estèreo."
 #~ msgid ""
 #~ "As part of their processing, some LADSPA effects must delay returning "
 #~ msgstr ""
-#~ "A causa del seu processament, alguns efectes LADSPA poden trigar a "
-#~ "retornar "
+#~ "A causa del seu processament, alguns efectes LADSPA poden tenir retard "
+#~ "en el retorn "
 
 #~ msgid "not work for all LADSPA effects."
 #~ msgstr "no funciona amb tots els efectes LADSPA."
 
 #~ msgid "As part of their processing, some LV2 effects must delay returning "
 #~ msgstr ""
-#~ "A causa del seu processament, alguns efectes LV2 poden trigar a retornar "
+#~ "A causa del seu processament, alguns efectes LV2 poden tenir retard en el retorn "
 
 #~ msgid "Enabling this setting will provide that compensation, but it may "
 #~ msgstr ""
